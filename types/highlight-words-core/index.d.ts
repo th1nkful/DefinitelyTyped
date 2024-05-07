@@ -2,7 +2,7 @@ export interface FindChunksArgs {
     autoEscape?: boolean | undefined;
     caseSensitive?: boolean | undefined;
     sanitize?: ((text: string) => string) | undefined;
-    searchWords: string[];
+    searchWords: (string | RegEx)[];
     textToHighlight: string;
 }
 
