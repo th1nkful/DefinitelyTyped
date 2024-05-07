@@ -14,3 +14,10 @@ findAll({
     searchWords,
     textToHighlight,
 });
+
+const regexSearchWords = [/some test/gi, new RegExp('some')];
+
+findAll({
+    searchWords: regexSearchWords,
+    textToHighlight,
+});
